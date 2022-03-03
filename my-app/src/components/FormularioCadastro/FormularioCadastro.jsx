@@ -20,7 +20,7 @@ class FormularioCadastro extends Component {
     }
     
     _criarNota(evento){
-        evento.preventDefault();
+        evento.preventDefault(); //default do submit é recarregar a pag
         evento.stopPropagation();
         this.props.criarNota(this.titulo, this.texto); 
     }
